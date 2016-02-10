@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/clock.js"></script>
+</head>
+<body id='test'>
+<script>
+var image = Math.floor(Math.random() * 12) + 1 ;
+image += '.jpg';
+$('body').css('background-image', 'url(bg/'+image+')');
+</script>
+<center>
+<div class="container">
+    <span id="date_time"></span>
+    <script type="text/javascript">window.onload = date_time('date_time');</script>
+    <form class="searchForm" method="get" action="https://google.com/search">
+        <input class="searchBar" id="goog" type="Search"  autocomplete="off" name="q" although placeholder=""/>
+    </form>   
+    <div class="box" style="background-image: url(icons/stack.png)">
+        <a onclick='window.location = "http://stackoverflow.com/"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+    <div class="box" style="background-image: url(icons/tumblr.png)">
+        <a onclick='window.location = "https://www.tumblr.com/"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+    <div class="box" style="background-image: url(icons/twitter.png)">
+        <a onclick='window.location = "http://www.twitter.com"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+    <div class="box" style="background-image: url(icons/twitch.png)">
+        <a onclick='window.location = "http://www.twitch.com/following"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+    <div class="box" style="background-image: url(icons/facebook.png)">
+        <a onclick='window.location = "http://www.facebook.com"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+    <div class="box" style="background-image: url(icons/github.png)">
+        <a onclick='window.location = "http://www.github.com"'>
+            <span class='default-link'></span>
+        </a>
+    </div>
+</div>
+</center>
+</body>
+</html>

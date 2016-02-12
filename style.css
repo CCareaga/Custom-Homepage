@@ -5,8 +5,8 @@ div.container {
     top: 50%;
     left: 50%;
     margin-top: -90px;
-    margin-left: -288px;
-    width: 575px;
+    margin-left: -300px;
+    width: 600px;
     height: 200px;
 }
 
@@ -17,11 +17,11 @@ div.container:after{
     top: 50%;
     left: 50%;
     margin-top: -110px;
-    margin-left: -288px;
+    margin-left: -300px;
     background-color: darkgrey;
     opacity: 0.5;
-    width: 575px;
-    height: 200px;
+    width: 600px;
+    height: 210px;
 }
 
 div.box {
@@ -51,7 +51,7 @@ div.box:hover {
 
 span{
     color: black;
-    font-size: 42px;
+    font-size: 55px;
     font-family: Ubuntu;
     position: relative;
     z-index: 1;
@@ -69,7 +69,7 @@ body {
 
 .searchBar {
     background-color:black;
-    width:425px;
+    width:475px;
     opacity: 0.7;
     margin-left: 0px;
     margin-top: 5px;
@@ -85,7 +85,7 @@ input[type="Search"]
 {
     font-size: 20px;
     color: white;
-    font-family: Montserrat;
+    font-family: Ubuntu;
 }
 
 .default-link{

@@ -1,17 +1,14 @@
 function date_time(id)
 {
         date = new Date;
-        year = date.getFullYear();
         month = date.getMonth();
         months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
         d = date.getDate();
-        day = date.getDay();
-        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+        if (d == '1'){d += 'st';}
+        else if (d == '2'){d += 'nd';}
+        else if (d == '3'){d += 'rd';}
+        else {d += 'th';}
         h = date.getHours();
-        if(h<10)
-        {
-                h = "0"+h;
-        }
         m = date.getMinutes();
         if(m<10)
         {
@@ -22,7 +19,7 @@ function date_time(id)
         {
                 s = "0"+s;
         }
-        result = ''+days[day]+' '+months[month]+' '+d+' '+h+':'+m;
+        result =  months[month]+' '+d+' '+h+':'+m;
         document.getElementById(id).innerHTML = result;
         setTimeout('date_time("'+id+'");','1000');
         return true;

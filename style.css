@@ -21,7 +21,7 @@ div.container:after{
     background-color: darkgrey;
     opacity: 0.5;
     width: 600px;
-    height: 210px;
+    height: 220px;
 }
 
 div.box {
@@ -49,7 +49,24 @@ div.box:hover {
     width: 85px;
 }
 
-span{
+div.dropdown {
+    width: 65px;
+    height: 20px;
+    margin-top: 5px;
+}
+input.drop {
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin: 0;
+    background: rgba(0,0,0,0.0);
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14pt;
+}
+
+span {
     color: black;
     font-size: 55px;
     font-family: Ubuntu;
@@ -99,8 +116,7 @@ input[type="Search"]
     transition-timing-function: ease-in-out;
 }
 
-.default-link:hover
-{
+.default-link:hover {
     transform: translate(0px,10px);
     width: 85px;
 }

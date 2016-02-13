@@ -10,6 +10,7 @@ function date_time(id)
         else {d += 'th';}
         h = date.getHours();
         m = date.getMinutes();
+        h = ((h + 11) % 12 + 1);
         if(m<10)
         {
                 m = "0"+m;
